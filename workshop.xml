@@ -3,6 +3,6 @@
 	description="Replaces Mina with Intoner One, and the cape too."
 	tags="player characters"
 	dont_upload_folders="ignore|data/ignore|data/enemies_gfx/ignore|files/ignore"
-	dont_upload_files=""
+	dont_upload_files=".gitignore|.gitattributes"
 > 
 </Mod>
