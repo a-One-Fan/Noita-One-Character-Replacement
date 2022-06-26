@@ -1,4 +1,4 @@
-<Entity name="$projectile_default" tags="projectile_player,disc_bullet_big" >
+<Entity name="$projectile_default" tags="projectile_player" >
 
 	<Base file="data/entities/base_projectile.xml" >
 		<VelocityComponent
@@ -38,7 +38,7 @@
     die_on_low_velocity_limit="5"
     bounces_left="2"
     bounce_at_any_angle="1"
-    collide_with_shooter_frames="6"
+    collide_with_shooter_frames="-1"
     friendly_fire="0"
     velocity_sets_rotation="1"
     velocity_updates_animation="1"
@@ -124,7 +124,7 @@
 	</LuaComponent>
 	
 	<AreaDamageComponent
-		_tags="area_damage"
+		_tags="area_damage|projectile_player"
 		aabb_min.x="-9" 
 		aabb_min.y="-9" 
 		aabb_max.x="9" 
@@ -133,7 +133,7 @@
 		update_every_n_frame="1"
 		entities_with_tag="hittable"
 		damage_type="DAMAGE_SLICE"
-		death_cause="bzzt!"
+		death_cause="Slash!"
 		_enabled="0"
 		>
 	</AreaDamageComponent>
