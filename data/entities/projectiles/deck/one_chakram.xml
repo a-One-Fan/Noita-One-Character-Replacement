@@ -65,7 +65,7 @@
   </SpriteComponent>
   
   <SpriteParticleEmitterComponent
-    sprite_file="data/particles/discbullet_trail.xml"
+    sprite_file="data/particles/one_chakram_trail.xml"
     delay="0"
     lifetime="1"
 	additive="1"
